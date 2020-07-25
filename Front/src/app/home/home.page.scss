@@ -1,0 +1,48 @@
+.toolbar{
+    --background: #d4d4d4;
+}
+
+.text {
+    background-color: #add8e6;
+    margin: 3%;
+    border-radius: 20px;
+    height: 14vh;
+    width: 100vw;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 33%;
+    padding-top: 2%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*.card {
+    display:flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 90vw;
+    height: 14vh;
+    background-color: #55ccf2;
+    margin-bottom: 6%;
+    margin-left: 6%;
+    padding-right: 4%;
+} */
+
+.infos {
+    padding: 3%;
+}
+
+h1{
+    font-size: 1.1em;
+}
+
+img {
+  display:flex;
+  position: absolute;
+}
