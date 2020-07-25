@@ -11,9 +11,12 @@ class DormitoriesController extends Controller
         $dormitory = new Dormitories;
         $dormitory->ad_name = $request->ad_name;
         $dormitory->address = $request->address;
+        $dormitory->zipcode = $request->zipcode;
+        $dormitory->city_state = $request->city_state;
+        $dormitory->phone = $request->phone;
+        $dormitory->bills_included = $request->bills_included;
         $dormitory->description = $request->description;
         $dormitory->price = $request->price;
-        $dormitory->bills_included = $request->bills_included;
         $dormitory->owner = $request->owner;
         $dormitory->save();
         return response()->json($dormitory);
@@ -42,17 +45,23 @@ class DormitoriesController extends Controller
         if($request->address){
             $dormitory->address = $request->address;
         }
+        if($request->zipcode){
+            $dormitory->zipcode = $request->zipcode;
+        }
+        if($request->city_state){
+            $dormitory->city_state = $request->city_state;
+        }
         if($request->phone){
             $dormitory->phone = $request->phone;
-        }
-        if($request->price){
-            $dormitory->price = $request->price;
         }
         if($request->bills_included){
             $dormitory->bills_included = $request->bills_included;
         }
         if($request->description){
             $dormitory->description = $request->description;
+        }
+        if($request->price){
+            $dormitory->price = $request->price;
         }
         if($request->owner){
             $dormitory->owner = $request->owner;

@@ -19,7 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-//Republic
+//Dormitory
 Route::post('createDormitory', 'DormitoriesController@createDormitory');
 Route::get('showDormitory/{id}', 'DormitoriesController@showDormitory');
 Route::get('findDormitory/{ad_name}', 'DormitoriesController@findDormitory');
@@ -34,3 +34,8 @@ Route::put('removeDormitory/{id}', 'DormitoriesController@removeDormitory');
 
 //User
 Route::post('createUser', 'UserController@createUser');
+Route::get('showUser/{id}', 'UserController@showUser');
+Route::get('findUser/{name}', 'UserController@findUser');
+Route::get('listUser', 'UserController@listUser');
+Route::put('updateUser/{id}', 'UserController@updateUser');
+Route::delete('deleteUser/{id}', 'UserController@deleteUser');

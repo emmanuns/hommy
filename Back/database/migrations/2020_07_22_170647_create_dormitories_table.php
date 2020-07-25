@@ -18,10 +18,12 @@ class CreateDormitoriesTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('ad_name');
             $table->string('address');
+            $table->string('zipcode');
+            $table->string('city_state');
             $table->string('phone')->nullable();
-            $table->float('price');
             $table->boolean('bills_included');
             $table->string('description')->nullable();
+            $table->float('price');
             $table->string('owner');
             $table->timestamps();
         });
