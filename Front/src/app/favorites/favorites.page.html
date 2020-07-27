@@ -9,30 +9,15 @@
 
 <ion-content>
   <ion-content class="ion-padding">
-    <div class="card">
-      <img class="img" src="../../assets/01.jpg">
+    <ion-card class="card" *ngFor="let dormitory of dormitories">
+      <ion-card-header>
+      <img class="img" [src]="dormitory.photo"/>
       <div class="text">
-        <h1>República da Maria</h1>
-        <h2>Quarto Individual disponível, contendo cama e mesa para estudos.</h2>
-        <h3>750,00</h3>
+        <ion-card-title class="title">{{dormitory.ad_name}}</ion-card-title>
+        <ion-card-subtitle class="subtitle">{{dormitory.address}}</ion-card-subtitle>
+        <h3>{{dormitory.description}}</h3>
+        <h4>{{dormitory.price}}</h4>
       </div>
-    </div>
-    
-    <div class="card">
-      <img class="img" src="../../assets/casinhaazul.jpg">
-      <div class="text">
-        <h1>Casinha</h1>
-        <h2>Quarto compartilhado, com armário. Sem cama disponível mas cabe uma de solteiro.</h2>
-        <h3>300,00</h3>
-      </div>
-    </div>
-    
-    <div class="card">
-      <img class="img" src="../../assets/blue.jpg">
-      <div class="text">
-        <h1>República dos Amigos</h1>
-        <h2>Quarto individual com banheiro, contendo cama, armário e mesa.</h2>
-        <h3>900,00</h3>
-      </div>
-    </div>
+      </ion-card-header>
+    </ion-card>
 </ion-content>

@@ -22,6 +22,11 @@ export class AppComponent implements OnInit {
       url: '/favorites',
       icon: 'heart'
     },
+    {
+      title: 'Search',
+      url: '/teste',
+      icon: 'search'
+    },
   
   ];
   

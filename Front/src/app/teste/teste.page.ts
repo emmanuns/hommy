@@ -10,13 +10,14 @@ class Dormitory {
 }
 
 @Component({
-  selector: 'app-favorites',
-  templateUrl: './favorites.page.html',
-  styleUrls: ['./favorites.page.scss'],
+  selector: 'app-teste',
+  templateUrl: './teste.page.html',
+  styleUrls: ['./teste.page.scss'],
 })
-export class FavoritesPage implements OnInit {
+export class TestePage implements OnInit {
   dormitories: Dormitory[];
-  constructor() { }
+
+  constructor() {}
 
   ngOnInit() {
     this.dormitories = [
@@ -32,7 +33,7 @@ export class FavoritesPage implements OnInit {
         address: "Antunes Garcia, 300 - Sampaio",
         price:300.00,
         bills_included: false,
-        description: "Quarto compartilhado, com armário. Cabe uma cama de solteiro.",
+        description: "Quarto compartilhado, com ar",
         photo:"../../assets/casinhaazul.jpg",
       }, {
         ad_name: "República dos Amigos",
@@ -43,5 +44,4 @@ export class FavoritesPage implements OnInit {
         photo:"../../assets/blue.jpg",
       }];
   }
-
 }
