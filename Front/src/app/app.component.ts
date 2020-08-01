@@ -23,10 +23,16 @@ export class AppComponent implements OnInit {
       icon: 'heart'
     },
     {
-      title: 'Search',
-      url: '/teste',
+      title: 'Cadastro',
+      url: '/cadastro-user',
       icon: 'search'
     },
+    {
+      title: 'República',
+      url: '/coments',
+      icon: 'key'
+    },
+  
   
   ];
   

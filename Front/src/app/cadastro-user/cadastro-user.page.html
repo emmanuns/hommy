@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Locador</ion-label>
+          <ion-radio slot="start" value="locador"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Locatário</ion-label>
+          <ion-radio slot="start" value="locatario"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Nome" type="text" formControlName="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Email" type="email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Telefone</ion-label>
+        <ion-input type="text" formControlName="phone" [brmasker]="{phone:true}"></ion-input>
+      </ion-item>
+        
+      <ion-item>
+        <ion-input placeholder="Senha" type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-button type="submit" color="danger" shape="round" [disabled]="registerForm.invalid">Cadastrar</ion-button>
+    </ion-row>
+    
+    </form>
+  </div>
+</ion-content>

@@ -22,6 +22,18 @@ const routes: Routes = [
   {
     path: 'teste',
     loadChildren: () => import('./teste/teste.module').then( m => m.TestePageModule)
+  },
+  {
+    path: 'cadastro-user',
+    loadChildren: () => import('./cadastro-user/cadastro-user.module').then( m => m.CadastroUserPageModule)
+  },
+  {
+    path: 'cadastro-dorm',
+    loadChildren: () => import('./cadastro-dorm/cadastro-dorm.module').then( m => m.CadastroDormPageModule)
+  },
+  {
+    path: 'coments',
+    loadChildren: () => import('./coments/coments.module').then( m => m.ComentsPageModule)
   }
 ];
 

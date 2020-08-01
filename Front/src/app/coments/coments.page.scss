@@ -1,0 +1,47 @@
+.card {
+    background-color: #add8e6;
+    border-radius: 20px;
+    margin: 3%;
+}
+
+.img {
+    width: 100vw;
+    height: 30vh;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.text {
+    padding: 2%;
+    font-size:1.1em;
+}
+
+.title {
+    font-size: 1.7em;
+}
+
+.toolbar {
+    --background: #d4d4d4;
+}
+
+.info {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin: 3%;
+
+}
+
+.coments {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin: 3%;
+    padding: 2%;
+    
+}
+
+ion-button {
+    color: black;
+    width: 30vw;
+    height: 5vh;
+}
+
