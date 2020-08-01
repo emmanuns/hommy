@@ -10,7 +10,7 @@
 <ion-content>
   <div>
     <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
-      <ion-radio-group>
+      <ion-radio-group class="botoes">
         <ion-item>
           <ion-label>Locador</ion-label>
           <ion-radio slot="start" value="locador"></ion-radio>
@@ -40,7 +40,7 @@
     </ion-list>
 
     <ion-row class="ion-justify-content-center">
-      <ion-button type="submit" color="danger" shape="round" [disabled]="registerForm.invalid">Cadastrar</ion-button>
+      <ion-button type="submit" fill="clear" [disabled]="registerForm.invalid">Cadastrar</ion-button>
     </ion-row>
     
     </form>

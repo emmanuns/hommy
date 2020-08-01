@@ -1,9 +1,7 @@
-.botoes {
-    display:flex;
-    flex-direction: row;
-}
-
 ion-button {
+    color: black;
     background-color: #add8e6;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
 }

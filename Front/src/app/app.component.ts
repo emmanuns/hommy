@@ -25,13 +25,18 @@ export class AppComponent implements OnInit {
     {
       title: 'Cadastro',
       url: '/cadastro-user',
-      icon: 'search'
+      icon: 'person-add'
     },
     {
       title: 'República',
       url: '/coments',
-      icon: 'key'
+      icon: 'square'
     },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'person'
+    }
   
   
   ];
